@@ -572,7 +572,7 @@ body.nl .layout__elevator
 // Post
 .post
     .post__title
-        &, a.post_title, a.post__title_link, post__title-text
+        &, a.post_title, a.post__title_link
             link(heading)
 
         .flag
@@ -630,11 +630,8 @@ body.nl .layout__elevator
         &-text, .t-text
             color: inherit
 
-        .t-heading, .t-title, .post__text-html
+        .t-heading, .t-title 
             color: heading
-        
-            blockquote
-                background-color: rgba(67, 67, 67, .6);
 
         iframe, object, img
             img_grayscale()
@@ -1264,3 +1261,13 @@ button, a.btn
 .user_settings .notification_table tr
     th, td
         color: inherit
+
+
+.post__text-html
+    color: heading
+        
+    blockquote
+        background-color: rgba(67, 67, 67, .6);
+
+.post__title-text
+    link(heading)

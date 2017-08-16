@@ -613,14 +613,12 @@ body.nl .layout__elevator:active {
 }
 .post .post__title,
 .post .post__title a.post_title,
-.post .post__title a.post__title_link,
-.post .post__title post__title-text {
+.post .post__title a.post__title_link {
   color: #b9c5cf;
 }
 .post .post__title:visited:not(.button),
 .post .post__title a.post_title:visited:not(.button),
-.post .post__title a.post__title_link:visited:not(.button),
-.post .post__title post__title-text:visited:not(.button) {
+.post .post__title a.post__title_link:visited:not(.button) {
   color: #738290;
 }
 .post .post__title .flag {
@@ -715,14 +713,8 @@ body.nl .layout__elevator:active {
   color: inherit;
 }
 .article__body .t-heading,
-.article__body .t-title,
-.article__body .post__text-html {
+.article__body .t-title {
   color: #b9c5cf;
-}
-.article__body .t-heading blockquote,
-.article__body .t-title blockquote,
-.article__body .post__text-html blockquote {
-  background-color: rgba(67,67,67,0.6);
 }
 .article__body iframe,
 .article__body object,
@@ -1504,4 +1496,16 @@ a.btn.btn_grey:hover {
 .user_settings .notification_table tr th,
 .user_settings .notification_table tr td {
   color: inherit;
+}
+.post__text-html {
+  color: #b9c5cf;
+}
+.post__text-html blockquote {
+  background-color: rgba(67,67,67,0.6);
+}
+.post__title-text {
+  color: #b9c5cf;
+}
+.post__title-text:visited:not(.button) {
+  color: #738290;
 }
